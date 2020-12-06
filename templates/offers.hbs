@@ -1,6 +1,7 @@
 <div>
     <h3>Offers</h3>
-    <a href="/offers/123">Offer123</a>
-    <a href="/offers/234">Offer234</a>
+    {{#each offers}}
+        <a href="/offers/{{offerId}}">Offer{{offerId}}</a>
+    {{/each}}
     <a href="/">Back</a>
 </div>

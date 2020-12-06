@@ -1,6 +1,8 @@
 export const offers = (ctx) => {
   console.log("offers")
-  ctx.partial("../templates/offers.hbs")
+  const offers = [ { offerId: 3 }, { offerId: 4 } ]
+  Object.assign(ctx, { offers })
+  ctx.partial("../templates/offers.hbs", ctx)
 }
 
 export const offerInfo = (ctx) => {
